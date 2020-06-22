@@ -1,12 +1,12 @@
 // map-like methods
 const naiveMap = (arr, multiplier) => {
-  const modifiedArr = []
+  const mappedArr = []
 
   for (const e of arr) {
-    modifiedArr.push(e * multiplier)
+    mappedArr.push(e * multiplier)
   }
 
-  return modifiedArr
+  return mappedArr
 }
 
 const mapToNegativize = (sourceArray) => naiveMap(sourceArray, -1)
@@ -26,4 +26,6 @@ const mapToSquare = (sourceArray) => {
 }
 
 // reduce-like methods
-// const naiveReduce = (arr, startingPoint) => {}
+const naiveReduce = (arr, startingPoint) => {
+  const reducedValue = 0
+}
