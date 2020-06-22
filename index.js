@@ -26,8 +26,8 @@ const mapToSquare = (sourceArray) => {
 }
 
 // reduce-like methods
-const naiveReduce = (arr, startingPoint) => {
-  const reducedValue = 0 + startingPoint
+const naiveReduce = (arr, startingPoint = 0) => {
+  const reducedValue = startingPoint
 
   for (const e of arr) {
     reducedValue += e
@@ -35,3 +35,5 @@ const naiveReduce = (arr, startingPoint) => {
 
   return reducedValue
 }
+
+const reduceToTotal = (sourceArray, startingPoint) => naiveReduce(sourceArray, startingPoint)
